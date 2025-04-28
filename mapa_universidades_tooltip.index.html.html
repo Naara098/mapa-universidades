@@ -1,0 +1,2282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd618f283b41b04bc055836d52777b30 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dd618f283b41b04bc055836d52777b30" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd618f283b41b04bc055836d52777b30 = L.map(
+                "map_dd618f283b41b04bc055836d52777b30",
+                {
+                    center: [40.4637, -3.7492],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1eb566eca9e6e579fa23aece1f581ab4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1eb566eca9e6e579fa23aece1f581ab4.addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var marker_7f483399e101294a04211eed72f5a73a = L.marker(
+                [40.4823302, -3.363064202743788],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_03bc88b1df38c1bb6ba2c27d7540105f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7f483399e101294a04211eed72f5a73a.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Alcala</b><br>
+        Fundación: Fundacion General de la Universidad  de Alcala (FGUA)<br>
+        Año de Constitución: 1991<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7f483399e101294a04211eed72f5a73a.setIcon(icon_03bc88b1df38c1bb6ba2c27d7540105f);
+            
+    
+            var marker_45572a648fd897fad154d2a9e8165078 = L.marker(
+                [38.385068399999994, -0.5146732487663428],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_e4ff24a80db017343de0dca87975f00b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_45572a648fd897fad154d2a9e8165078.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Alicante</b><br>
+        Fundación: Fundación General de la Universidad de Alicante<br>
+        Año de Constitución: 2003<br>
+        Comunidad Autónoma: Comunidad Valenciana
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45572a648fd897fad154d2a9e8165078.setIcon(icon_e4ff24a80db017343de0dca87975f00b);
+            
+    
+            var marker_e703bd67b7e17f8e115975cc7a1999a0 = L.marker(
+                [36.829811750000005, -2.4057069637409816],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_6b1b7437590d5e46b6e89cf7b2bf359e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e703bd67b7e17f8e115975cc7a1999a0.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Almeria</b><br>
+        Fundación: Fundación de la Universidad de Almeria (FUA)<br>
+        Año de Constitución: 1999<br>
+        Comunidad Autónoma: Andalucia
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e703bd67b7e17f8e115975cc7a1999a0.setIcon(icon_6b1b7437590d5e46b6e89cf7b2bf359e);
+            
+    
+            var marker_9b762d7800335263e50774ec59260d33 = L.marker(
+                [41.50155265, 2.106260723986069],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_9ba6c80cb890c34974a4defaee64a676 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9b762d7800335263e50774ec59260d33.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Autónoma de Barcelona</b><br>
+        Fundación: Fundación Autónoma de Barcelona (FUB)<br>
+        Año de Constitución: 1998<br>
+        Comunidad Autónoma: Cataluña
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b762d7800335263e50774ec59260d33.setIcon(icon_9ba6c80cb890c34974a4defaee64a676);
+            
+    
+            var marker_6c523741e65423d6c52529bfd876e4a4 = L.marker(
+                [40.5453765, -3.6949577655963672],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_e072db0074d93eea9fb96f86b139e2f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6c523741e65423d6c52529bfd876e4a4.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Autónoma de Madrid</b><br>
+        Fundación: Fundación de la Universidad Autónoma de Madrid (FUAM)<br>
+        Año de Constitución:  1991<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c523741e65423d6c52529bfd876e4a4.setIcon(icon_e072db0074d93eea9fb96f86b139e2f1);
+            
+    
+            var marker_5fb2363d5220fa3352c434f15c05830f = L.marker(
+                [41.38685955, 2.163478411827376],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_3cc2cf57d0862e43517d854f9a50ef36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5fb2363d5220fa3352c434f15c05830f.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Barcelona</b><br>
+        Fundación: Fundació Bosch i Gimpera - UB<br>
+        Año de Constitución: 1983<br>
+        Comunidad Autónoma: Cataluña
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5fb2363d5220fa3352c434f15c05830f.setIcon(icon_3cc2cf57d0862e43517d854f9a50ef36);
+            
+    
+            var marker_1127c95e1d145d514126759d4b7d15c5 = L.marker(
+                [40.3150937, -3.7248793246049545],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_0e608a38f7e380180abc83d4bd8b0dba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1127c95e1d145d514126759d4b7d15c5.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Carlos III de Madrid</b><br>
+        Fundación: Fundación Universidad Carlos III<br>
+        Año de Constitución: 1990<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1127c95e1d145d514126759d4b7d15c5.setIcon(icon_0e608a38f7e380180abc83d4bd8b0dba);
+            
+    
+            var marker_021d4ab9d1336fb3bcf76be3dbc488cc = L.marker(
+                [38.99738785, -3.91923464874601],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_2e4afd491d944b5c3ca0e6540b3e968a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_021d4ab9d1336fb3bcf76be3dbc488cc.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Castilla-La Mancha</b><br>
+        Fundación: Fundación General de la Universidad de Castilla-La Mancha<br>
+        Año de Constitución: 1999<br>
+        Comunidad Autónoma: Castilla-La Mancha
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_021d4ab9d1336fb3bcf76be3dbc488cc.setIcon(icon_2e4afd491d944b5c3ca0e6540b3e968a);
+            
+    
+            var marker_bf6af459eb77c8d81f76de40a6e9c027 = L.marker(
+                [36.5294785, -6.2059829],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_5dca4259b745291c514ee77f54452517 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bf6af459eb77c8d81f76de40a6e9c027.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Cadiz</b><br>
+        Fundación: Fundación Universidad de Cadiz (FUCA)<br>
+        Año de Constitución: 1998<br>
+        Comunidad Autónoma: Andalucia
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf6af459eb77c8d81f76de40a6e9c027.setIcon(icon_5dca4259b745291c514ee77f54452517);
+            
+    
+            var marker_1ca89bf1143b4cb789b6309b51533f23 = L.marker(
+                [43.47149725, -3.8018803074352396],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_b534b227a070b131271eb5dce04e9db7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1ca89bf1143b4cb789b6309b51533f23.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Cantabria</b><br>
+        Fundación: Fundación Universidad de Cantabria (FUC) <br>
+        Año de Constitución: 2006<br>
+        Comunidad Autónoma: Cantabria
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ca89bf1143b4cb789b6309b51533f23.setIcon(icon_b534b227a070b131271eb5dce04e9db7);
+            
+    
+            var marker_7a33560bf53d6836799b86d8dbabf066 = L.marker(
+                [8.79042355, -75.86177184901655],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_c2cfe354d976ca0e65a79b10ee9eb654 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_7a33560bf53d6836799b86d8dbabf066.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Cordoba</b><br>
+        Fundación: Fundación Universidad de Cordoba (FUC)<br>
+        Año de Constitución: 1997<br>
+        Comunidad Autónoma: Andalucía
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7a33560bf53d6836799b86d8dbabf066.setIcon(icon_c2cfe354d976ca0e65a79b10ee9eb654);
+            
+    
+            var marker_408e41f05fb7d11da95c4110b753981e = L.marker(
+                [38.885072199999996, -7.007832871480037],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_1ad79f47cf611dc823aeff5cf44b95c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_408e41f05fb7d11da95c4110b753981e.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Extremadura</b><br>
+        Fundación: Fundación Universidad de Extremadura (FUEx)<br>
+        Año de Constitución: 2003<br>
+        Comunidad Autónoma: Extremadura
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_408e41f05fb7d11da95c4110b753981e.setIcon(icon_1ad79f47cf611dc823aeff5cf44b95c8);
+            
+    
+            var marker_ca5c8eb0adeae192049557a0413585f1 = L.marker(
+                [41.9845435, 2.8280084],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_781c8c6fedacff8bf828814aef172734 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ca5c8eb0adeae192049557a0413585f1.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Girona</b><br>
+        Fundación: Fundación Universidad de Girona (FUdG) <br>
+        Año de Constitución: 1997<br>
+        Comunidad Autónoma: Cataluña
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca5c8eb0adeae192049557a0413585f1.setIcon(icon_781c8c6fedacff8bf828814aef172734);
+            
+    
+            var marker_91e9a505327d881ead5b30b3bfa01a6e = L.marker(
+                [37.1809009, -3.6000115],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_8f3456714cf3be6d3bff7ac4eb530b46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_91e9a505327d881ead5b30b3bfa01a6e.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Granada</b><br>
+        Fundación: Fundación General Universidad de Granada (FGUGREM)<br>
+        Año de Constitución: 1989<br>
+        Comunidad Autónoma: Andalucia
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91e9a505327d881ead5b30b3bfa01a6e.setIcon(icon_8f3456714cf3be6d3bff7ac4eb530b46);
+            
+    
+            var marker_290ea625ff9e3ae803bc93f1c1e80aca = L.marker(
+                [37.27169497500175, -6.923137624541693],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_22d7d80b418b1a3470243e1b7ec2a0f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_290ea625ff9e3ae803bc93f1c1e80aca.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Huelva</b><br>
+        Fundación: Fundación Universidad de Huelva (FUH)<br>
+        Año de Constitución: nan<br>
+        Comunidad Autónoma: Andalucia
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_290ea625ff9e3ae803bc93f1c1e80aca.setIcon(icon_22d7d80b418b1a3470243e1b7ec2a0f0);
+            
+    
+            var marker_50ddcdee5f6b290ad3e123b58ffb1f72 = L.marker(
+                [39.994311999999994, -0.07139616293945164],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_2a04812ad97a73951946326b2455eaf2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_50ddcdee5f6b290ad3e123b58ffb1f72.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Jaume I de Castellon</b><br>
+        Fundación: Fundación Universitat Jaume I-Empresa de la Comunitat Valenciana M.P. (FUE-UJI) <br>
+        Año de Constitución: 1993<br>
+        Comunidad Autónoma: Comunidad Valenciana
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50ddcdee5f6b290ad3e123b58ffb1f72.setIcon(icon_2a04812ad97a73951946326b2455eaf2);
+            
+    
+            var marker_9e7cf50de13f6a70ca639d671864fa75 = L.marker(
+                [25.5767527, -103.4292775],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_70134c00df8109ea1d3a21bc7f77a674 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9e7cf50de13f6a70ca639d671864fa75.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de La Laguna</b><br>
+        Fundación: Fundación General Universidad de La Laguna (FGULL)<br>
+        Año de Constitución: 1987<br>
+        Comunidad Autónoma: Canarias
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9e7cf50de13f6a70ca639d671864fa75.setIcon(icon_70134c00df8109ea1d3a21bc7f77a674);
+            
+    
+            var marker_b2e7be058cf3d6449ca958cf0e66920f = L.marker(
+                [28.1118348, -15.424774334637561],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_136b8ccd627bb2bf54351ad9f82611c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b2e7be058cf3d6449ca958cf0e66920f.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Las Palmas de Gran Canaria</b><br>
+        Fundación: Fundación Canaria Universidad de Las Palmas (FULP) <br>
+        Año de Constitución:  2020<br>
+        Comunidad Autónoma: Canarias
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b2e7be058cf3d6449ca958cf0e66920f.setIcon(icon_136b8ccd627bb2bf54351ad9f82611c4);
+            
+    
+            var marker_3901ff6571601b2d290180cce16ba391 = L.marker(
+                [20.6793755, -101.34345522759236],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_8d595a05c05fca564be85f9374488c57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3901ff6571601b2d290180cce16ba391.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Leon</b><br>
+        Fundación: Fundación General Universidad de Leon (FGULEM) <br>
+        Año de Constitución: 1997<br>
+        Comunidad Autónoma: Castilla y Leon
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3901ff6571601b2d290180cce16ba391.setIcon(icon_8d595a05c05fca564be85f9374488c57);
+            
+    
+            var marker_c19bf963559f989f7b924303643d0040 = L.marker(
+                [41.6284922, 0.5968596265003133],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_e62e8c1fd725f09059a4692c471c8174 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c19bf963559f989f7b924303643d0040.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Lleida</b><br>
+        Fundación: Fundación Universidad de Lleida (FUDL)<br>
+        Año de Constitución: 2015<br>
+        Comunidad Autónoma: Cataluña
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c19bf963559f989f7b924303643d0040.setIcon(icon_e62e8c1fd725f09059a4692c471c8174);
+            
+    
+            var marker_0963a1b871b79febf423e81f57fe3642 = L.marker(
+                [36.7165576, -4.495336390634675],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_b276b28dfe650f8eb3041328801a9628 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0963a1b871b79febf423e81f57fe3642.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Malaga</b><br>
+        Fundación: Fundación General Universidad de Malaga (FGUMA)<br>
+        Año de Constitución: 1972<br>
+        Comunidad Autónoma: Andalucía
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0963a1b871b79febf423e81f57fe3642.setIcon(icon_b276b28dfe650f8eb3041328801a9628);
+            
+    
+            var marker_6105cb44c1e4279ba8db8cd230195812 = L.marker(
+                [38.824473499999996, -0.6118279247426005],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_378473a86de9d0e17254c4f74cf43e25 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6105cb44c1e4279ba8db8cd230195812.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Nacional de Educación a Distancia (UNED)</b><br>
+        Fundación: Fundacion UNED<br>
+        Año de Constitución: 1972<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6105cb44c1e4279ba8db8cd230195812.setIcon(icon_378473a86de9d0e17254c4f74cf43e25);
+            
+    
+            var marker_1fbdd98e7a0f962e3052d2b71520c988 = L.marker(
+                [43.35352695, -5.875012963515381],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_4bb0be6800aa2b71a9253646fb208545 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1fbdd98e7a0f962e3052d2b71520c988.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Oviedo</b><br>
+        Fundación: Fundación Universidad de Oviedo<br>
+        Año de Constitución: 1997<br>
+        Comunidad Autónoma: Asturias
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1fbdd98e7a0f962e3052d2b71520c988.setIcon(icon_4bb0be6800aa2b71a9253646fb208545);
+            
+    
+            var marker_afa07f222ba360b5c96fa75b0af63fce = L.marker(
+                [37.356080899999995, -5.938167775804539],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_d184e3fca4638860a3e03105f31bff36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_afa07f222ba360b5c96fa75b0af63fce.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Pablo de Olavide</b><br>
+        Fundación: Fundación Universidad Pablo de Olavide (FOPO)<br>
+        Año de Constitución: 1997<br>
+        Comunidad Autónoma: Andalucía
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_afa07f222ba360b5c96fa75b0af63fce.setIcon(icon_d184e3fca4638860a3e03105f31bff36);
+            
+    
+            var marker_8bd37debb98ff23ccecb2e59d3b0b669 = L.marker(
+                [41.22144745, 1.7301449113565364],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_c99f7627767a0374ababbd57d796ad04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8bd37debb98ff23ccecb2e59d3b0b669.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Politécnica de Cataluña</b><br>
+        Fundación: Fundación Universidad Politécnica de Cataluña  (FPC)<br>
+        Año de Constitución: 1994<br>
+        Comunidad Autónoma: Cataluña
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8bd37debb98ff23ccecb2e59d3b0b669.setIcon(icon_c99f7627767a0374ababbd57d796ad04);
+            
+    
+            var marker_50b5be82dc8624aa6e2410e9c6b9cbe8 = L.marker(
+                [40.3894276, -3.6282862167150904],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_7fe4c93c57ba876d7a1b03e6715e862e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_50b5be82dc8624aa6e2410e9c6b9cbe8.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Politécnica de Madrid</b><br>
+        Fundación: Fundación General Universidad Politecnica de Madrid  (FGUPM)<br>
+        Año de Constitución: 1981<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_50b5be82dc8624aa6e2410e9c6b9cbe8.setIcon(icon_7fe4c93c57ba876d7a1b03e6715e862e);
+            
+    
+            var marker_6dff19c74aefd8a0cd6f453757f359fe = L.marker(
+                [39.4808517, -0.3420311427062354],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_c01ad0db6302f8ca6cd05ea404112d10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6dff19c74aefd8a0cd6f453757f359fe.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Politécnica de Valencia</b><br>
+        Fundación: Fundación de la Comunitat Valenciana Ciudad Politécnica de la Innovacion<br>
+        Año de Constitución: 2008<br>
+        Comunidad Autónoma: Comunidad Valenciana
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6dff19c74aefd8a0cd6f453757f359fe.setIcon(icon_c01ad0db6302f8ca6cd05ea404112d10);
+            
+    
+            var marker_67af28f5b50022d509ad7a1e1b76cc69 = L.marker(
+                [42.79547015, -1.628909207069672],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_0c847b8877af51cbf6bafbb0e42c64ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_67af28f5b50022d509ad7a1e1b76cc69.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Pública de Navarra</b><br>
+        Fundación: Fundación Universidad Pública de Navarra<br>
+        Año de Constitución: 1993<br>
+        Comunidad Autónoma: Comunidad Foral de Navarra
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_67af28f5b50022d509ad7a1e1b76cc69.setIcon(icon_0c847b8877af51cbf6bafbb0e42c64ad);
+            
+    
+            var marker_0562b9ac1edcf3b2c802249f2bccabe9 = L.marker(
+                [40.33611785, -3.877120311212634],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_6efcc89f930dd7049dd85b726675255b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0562b9ac1edcf3b2c802249f2bccabe9.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Rey Juan Carlos</b><br>
+        Fundación: Fundacion clinica Universidad Rey Juan Carlos (FCURJ)<br>
+        Año de Constitución: 2014<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0562b9ac1edcf3b2c802249f2bccabe9.setIcon(icon_6efcc89f930dd7049dd85b726675255b);
+            
+    
+            var marker_93b85367c9850e60d164c3fd9f508ac8 = L.marker(
+                [41.12268315, 1.2501586736136532],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_708c9059d16c53762bd797fd8a74f8cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_93b85367c9850e60d164c3fd9f508ac8.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Rovira i Virgili</b><br>
+        Fundación: Fundación Universidad Rovira i Virgili (FURV)<br>
+        Año de Constitución: 1999<br>
+        Comunidad Autónoma: Cataluña
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_93b85367c9850e60d164c3fd9f508ac8.setIcon(icon_708c9059d16c53762bd797fd8a74f8cc);
+            
+    
+            var marker_b5059ce3ac02bc61fb39892d0c369683 = L.marker(
+                [20.801195311883706, -102.76607625679912],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_9c7de40afe9ebf96f16391a0a6c2d736 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_b5059ce3ac02bc61fb39892d0c369683.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Salamanca</b><br>
+        Fundación: Fundación General Universidad de Salamanca <br>
+        Año de Constitución: 1998<br>
+        Comunidad Autónoma: Castilla y Leon
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b5059ce3ac02bc61fb39892d0c369683.setIcon(icon_9c7de40afe9ebf96f16391a0a6c2d736);
+            
+    
+            var marker_433b3912a5c13e0faddcdbd7f649fcf4 = L.marker(
+                [42.8786789, -8.54245040081301],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_531c97e7213804d92f383e19c3bd7f2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_433b3912a5c13e0faddcdbd7f649fcf4.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Santiago de Compostela</b><br>
+        Fundación: Fundación Universidad de Santiago de Compostela<br>
+        Año de Constitución: 1495<br>
+        Comunidad Autónoma: Galicia
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_433b3912a5c13e0faddcdbd7f649fcf4.setIcon(icon_531c97e7213804d92f383e19c3bd7f2a);
+            
+    
+            var marker_5b91f97731dd05db4cb0ef99f50855cb = L.marker(
+                [6.2694028, -75.56579130329999],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_b67c0bdbf5a311311b93d6d4cb06db1f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_5b91f97731dd05db4cb0ef99f50855cb.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Sevilla</b><br>
+        Fundación: Fundación Universidad de Sevilla (FUIS)<br>
+        Año de Constitución: 2008<br>
+        Comunidad Autónoma: Andalucía
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5b91f97731dd05db4cb0ef99f50855cb.setIcon(icon_b67c0bdbf5a311311b93d6d4cb06db1f);
+            
+    
+            var marker_980712a64713f04167b91e75301f3e4e = L.marker(
+                [39.471885650000004, -0.3731467670268633],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_4517733ccd34d2b817737537a512b9c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_980712a64713f04167b91e75301f3e4e.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Valencia</b><br>
+        Fundación: Fundació General de la Universitat de Valencia<br>
+        Año de Constitución: 1983<br>
+        Comunidad Autónoma: Comunidad Valenciana
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_980712a64713f04167b91e75301f3e4e.setIcon(icon_4517733ccd34d2b817737537a512b9c9);
+            
+    
+            var marker_8063e57e2feb0fb2d581702349e95c53 = L.marker(
+                [41.6516894, -4.7209841],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_51f642bb8f8b514fe15752c358d67631 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8063e57e2feb0fb2d581702349e95c53.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Valladolid</b><br>
+        Fundación: Fundación General Universidad de Valladolid<br>
+        Año de Constitución: 1996<br>
+        Comunidad Autónoma: Castilla y Leon
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8063e57e2feb0fb2d581702349e95c53.setIcon(icon_51f642bb8f8b514fe15752c358d67631);
+            
+    
+            var marker_31463f64432d3944e196d9714c87380f = L.marker(
+                [42.1689885, -8.6837033],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_32bc1068a98c245b607d0bbdb39c0d26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_31463f64432d3944e196d9714c87380f.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Vigo</b><br>
+        Fundación: Fundación Universidad de Vigo<br>
+        Año de Constitución: 1997<br>
+        Comunidad Autónoma: Galicia
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_31463f64432d3944e196d9714c87380f.setIcon(icon_32bc1068a98c245b607d0bbdb39c0d26);
+            
+    
+            var marker_ec19dbdd479312a458417f3977c6a4c2 = L.marker(
+                [42.84102588481971, -2.674452811087974],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_8d3697e58dc3f61e114402cb838ec0a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ec19dbdd479312a458417f3977c6a4c2.bindTooltip(
+                `<div>
+                     
+        <b>Universidad del País Vasco</b><br>
+        Fundación: Fundación Universidad del País Vasco<br>
+        Año de Constitución: 1980<br>
+        Comunidad Autónoma: País Vasco
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ec19dbdd479312a458417f3977c6a4c2.setIcon(icon_8d3697e58dc3f61e114402cb838ec0a2);
+            
+    
+            var marker_83153acaaba7df71902cd47cda188d1f = L.marker(
+                [42.568556, -0.5541831500270802],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_b4f987b522d9d6369e3a2a0a427c7599 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_83153acaaba7df71902cd47cda188d1f.bindTooltip(
+                `<div>
+                     
+        <b>Universidad de Zaragoza</b><br>
+        Fundación: Fundación Empresa Universidad de Zaragoza<br>
+        Año de Constitución: 1982<br>
+        Comunidad Autónoma: Aragon
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_83153acaaba7df71902cd47cda188d1f.setIcon(icon_b4f987b522d9d6369e3a2a0a427c7599);
+            
+    
+            var marker_c15e52b58f791006782163bb26481ced = L.marker(
+                [40.3150937, -3.7248793246049545],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_122fa9669d76fd65b58c321eaec29bfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_c15e52b58f791006782163bb26481ced.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Carlos III de Madrid</b><br>
+        Fundación: Fundación Universidad Carlos III<br>
+        Año de Constitución: 1990<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c15e52b58f791006782163bb26481ced.setIcon(icon_122fa9669d76fd65b58c321eaec29bfd);
+            
+    
+            var marker_67f69d4d8fa07eb88aacbfa8aaa30ebd = L.marker(
+                [40.4542443, -3.9849015919594257],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_af0d10d1dd6aad0797de58a09570946f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_67f69d4d8fa07eb88aacbfa8aaa30ebd.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Alfonso X el Sabio</b><br>
+        Fundación: Fundación Universidad Alfonso X el Sabio<br>
+        Año de Constitución: 2006<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_67f69d4d8fa07eb88aacbfa8aaa30ebd.setIcon(icon_af0d10d1dd6aad0797de58a09570946f);
+            
+    
+            var marker_d609b6655c5146dea1e1c5db1e30e09d = L.marker(
+                [40.6006143, -3.9495248],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_a1c26df6f1757442796b43319759fb84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d609b6655c5146dea1e1c5db1e30e09d.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Antonio de Nebrija</b><br>
+        Fundación: Fundación Antonio de Nebrija<br>
+        Año de Constitución: 1987<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d609b6655c5146dea1e1c5db1e30e09d.setIcon(icon_a1c26df6f1757442796b43319759fb84);
+            
+    
+            var marker_e2ac30d339cbea0767be656429e8da0e = L.marker(
+                [40.47389125, -3.9398590835139133],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_055de8568dfed22e9f25ebb26bd00174 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e2ac30d339cbea0767be656429e8da0e.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Camilo José Cela</b><br>
+        Fundación: Fundación Camilo José Cela<br>
+        Año de Constitución: 2018<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e2ac30d339cbea0767be656429e8da0e.setIcon(icon_055de8568dfed22e9f25ebb26bd00174);
+            
+    
+            var marker_dd1b64c4fa74b5cc4375690b1d39f99b = L.marker(
+                [40.66678185, -4.704267528634027],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_ff783361d6af21f419340c526a527f10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_dd1b64c4fa74b5cc4375690b1d39f99b.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Católica de Ávila</b><br>
+        Fundación: Fundación Universidad Católica de Ávila<br>
+        Año de Constitución: 1996<br>
+        Comunidad Autónoma: Castilla y Leon
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_dd1b64c4fa74b5cc4375690b1d39f99b.setIcon(icon_ff783361d6af21f419340c526a527f10);
+            
+    
+            var marker_4e50e1798b3725bb6872f33564cd42bc = L.marker(
+                [37.99125765, -1.1852019359064094],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_3863f45ef41495edca4c2309de6183a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4e50e1798b3725bb6872f33564cd42bc.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Católica de Murcia (UCAM)</b><br>
+        Fundación: Fundación Universidad Católica de Murcia (FUCAM)<br>
+        Año de Constitución: 1996<br>
+        Comunidad Autónoma: Región de Murcia
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e50e1798b3725bb6872f33564cd42bc.setIcon(icon_3863f45ef41495edca4c2309de6183a3);
+            
+    
+            var marker_e450add7021b76783944c824751e9ebf = L.marker(
+                [40.39991055, -3.835923066832834],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_512b89d7fec5421790321554fcf32cf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e450add7021b76783944c824751e9ebf.bindTooltip(
+                `<div>
+                     
+        <b>Universidad CEU San Pablo</b><br>
+        Fundación: Fundación Universitaria San Pablo CEU<br>
+        Año de Constitución: 1933<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e450add7021b76783944c824751e9ebf.setIcon(icon_512b89d7fec5421790321554fcf32cf6);
+            
+    
+            var marker_17ed17ba31e5eac2f6bad5651762b4cc = L.marker(
+                [40.3727017, -3.918582322575328],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_b8487cb4e80df334cda7890fd1b8eeff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_17ed17ba31e5eac2f6bad5651762b4cc.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Europea de Madrid</b><br>
+        Fundación: Fundación Universidad Europea<br>
+        Año de Constitución: 2001<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17ed17ba31e5eac2f6bad5651762b4cc.setIcon(icon_b8487cb4e80df334cda7890fd1b8eeff);
+            
+    
+            var marker_3e816f86e2bcc760238143e7d12f0272 = L.marker(
+                [40.4402647, -3.8339055995995173],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_7042ea6fae341f3c61a501f9588e625e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_3e816f86e2bcc760238143e7d12f0272.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Francisco de Vitoria</b><br>
+        Fundación: Fundación Francisco de Vitoria<br>
+        Año de Constitución: 1993<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3e816f86e2bcc760238143e7d12f0272.setIcon(icon_7042ea6fae341f3c61a501f9588e625e);
+            
+    
+            var marker_6e14167af0ca8476650f56fa36b63cb5 = L.marker(
+                [42.462214849999995, -2.42420188678446],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_a673926cbc56f3145293dd48438cbde5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_6e14167af0ca8476650f56fa36b63cb5.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Internacional de La Rioja (UNIR)</b><br>
+        Fundación: Fundación UNIR<br>
+        Año de Constitución: 2009<br>
+        Comunidad Autónoma: La Rioja
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e14167af0ca8476650f56fa36b63cb5.setIcon(icon_a673926cbc56f3145293dd48438cbde5);
+            
+    
+            var marker_74f9b3d6dd90c0c9340ba240136e5982 = L.marker(
+                [43.47322485, -3.7953595492099623],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_5f2a5667145428898bad75a4c2b6aec6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_74f9b3d6dd90c0c9340ba240136e5982.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Internacional Menéndez Pelayo</b><br>
+        Fundación: Fundación UIMP<br>
+        Año de Constitución: nan<br>
+        Comunidad Autónoma: Cantabria
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_74f9b3d6dd90c0c9340ba240136e5982.setIcon(icon_5f2a5667145428898bad75a4c2b6aec6);
+            
+    
+            var marker_e635f7615ac429fc78f5ee362882db1b = L.marker(
+                [37.3081351, -5.942206347703131],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_64b0b51862725e4b6e5f8dcb6ae3ac75 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_e635f7615ac429fc78f5ee362882db1b.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Loyola Andalucía</b><br>
+        Fundación: Fundación Loyola<br>
+        Año de Constitución: 1998<br>
+        Comunidad Autónoma: Andalucía
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e635f7615ac429fc78f5ee362882db1b.setIcon(icon_64b0b51862725e4b6e5f8dcb6ae3ac75);
+            
+    
+            var marker_99d6e74e692d3fb03ab3d049b9ddec98 = L.marker(
+                [40.42956205, -3.7114546554076266],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_2488e80868d507fae4ce7becc661bf64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_99d6e74e692d3fb03ab3d049b9ddec98.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Pontificia Comillas</b><br>
+        Fundación: Fundación Universitaria Comillas-ICAI<br>
+        Año de Constitución: 1959<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_99d6e74e692d3fb03ab3d049b9ddec98.setIcon(icon_2488e80868d507fae4ce7becc661bf64);
+            
+    
+            var marker_0e8b1da0606bb7982252f104912355fd = L.marker(
+                [41.7563238, -0.8326303052676749],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_a1a6f0ac86fec3c710ae5e18c66183a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_0e8b1da0606bb7982252f104912355fd.bindTooltip(
+                `<div>
+                     
+        <b>Universidad San Jorge</b><br>
+        Fundación: Fundación San Jorge<br>
+        Año de Constitución: 1996<br>
+        Comunidad Autónoma: Aragon
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e8b1da0606bb7982252f104912355fd.setIcon(icon_a1a6f0ac86fec3c710ae5e18c66183a7);
+            
+    
+            var marker_8b5c1238a3e02135286095633aab133b = L.marker(
+                [40.49601405, -3.7019426149694605],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_28a72b66217f5f95736a5b87dbe5ede4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_8b5c1238a3e02135286095633aab133b.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Villanueva</b><br>
+        Fundación: Fundación Villanueva<br>
+        Año de Constitución: 2022<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8b5c1238a3e02135286095633aab133b.setIcon(icon_28a72b66217f5f95736a5b87dbe5ede4);
+            
+    
+            var marker_32ebf8e630fdee106eb624e77b0440f8 = L.marker(
+                [41.395654, 2.1459873],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_35fa7a38cb71d32ccc3846c002d31877 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_32ebf8e630fdee106eb624e77b0440f8.bindTooltip(
+                `<div>
+                     
+        <b>ESIC Business & Marketing School</b><br>
+        Fundación: Fundacion De Estudios Superiores E Investigacion ESIC<br>
+        Año de Constitución: 2018<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_32ebf8e630fdee106eb624e77b0440f8.setIcon(icon_35fa7a38cb71d32ccc3846c002d31877);
+            
+    
+            var marker_65b08f02b04cc22786464dd62993b3a2 = L.marker(
+                [40.95293485, -4.118691695308259],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_a6579f5291cba468ffb9d91489f92390 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_65b08f02b04cc22786464dd62993b3a2.bindTooltip(
+                `<div>
+                     
+        <b>IE University</b><br>
+        Fundación: Fundación IE<br>
+        Año de Constitución: 1997<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65b08f02b04cc22786464dd62993b3a2.setIcon(icon_a6579f5291cba468ffb9d91489f92390);
+            
+    
+            var marker_ca101212d478681104e3a91fd4054ec2 = L.marker(
+                [-22.896539349999998, -43.10689348547022],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_dd5611bccdaba3d1659dce913ac83970 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ca101212d478681104e3a91fd4054ec2.bindTooltip(
+                `<div>
+                     
+        <b>La Salle Centro Universitario</b><br>
+        Fundación: Fundación La Salle<br>
+        Año de Constitución: 2010<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca101212d478681104e3a91fd4054ec2.setIcon(icon_dd5611bccdaba3d1659dce913ac83970);
+            
+    
+            var marker_68503b4c194af1b0a21b0be88aec3a6e = L.marker(
+                [40.4438371, -3.7174306674506212],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_c47484f98f6402adc18518e724affb55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_68503b4c194af1b0a21b0be88aec3a6e.bindTooltip(
+                `<div>
+                     
+        <b>Saint Louis University Madrid Campus</b><br>
+        Fundación: Fundación Saint Louis University<br>
+        Año de Constitución: 1967<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_68503b4c194af1b0a21b0be88aec3a6e.setIcon(icon_c47484f98f6402adc18518e724affb55);
+            
+    
+            var marker_9b50eaf0ac91559dd24056430ed4718e = L.marker(
+                [49.4013697, 8.6715978],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_4bba9bee4888f385bbc871e0dd519e7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_9b50eaf0ac91559dd24056430ed4718e.bindTooltip(
+                `<div>
+                     
+        <b>Schiller International University</b><br>
+        Fundación: Fundación Schiller<br>
+        Año de Constitución: nan<br>
+        Comunidad Autónoma: Comunidad de Madrid
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b50eaf0ac91559dd24056430ed4718e.setIcon(icon_4bba9bee4888f385bbc871e0dd519e7b);
+            
+    
+            var marker_ba9d6763392183f1bbc9a007f335f664 = L.marker(
+                [41.62612625, -4.715804042501507],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_02c516aabbeb55c7f5891cbc3ff4a0c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ba9d6763392183f1bbc9a007f335f664.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Europea Miguel de Cervantes</b><br>
+        Fundación: Fundación Universidad Europea Miguel de Cervantes<br>
+        Año de Constitución: 2001<br>
+        Comunidad Autónoma: Castilla y Leon
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ba9d6763392183f1bbc9a007f335f664.setIcon(icon_02c516aabbeb55c7f5891cbc3ff4a0c9);
+            
+    
+            var marker_410859d06f67e91a98c9a965d563b387 = L.marker(
+                [-0.20017385, -78.47528459906353],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_b178e104a5eec5f33a5153b05802157d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_410859d06f67e91a98c9a965d563b387.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Internacional SEK</b><br>
+        Fundación: Fundación Universidad Internacional SEK<br>
+        Año de Constitución: nan<br>
+        Comunidad Autónoma: Castilla y Leon
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_410859d06f67e91a98c9a965d563b387.setIcon(icon_b178e104a5eec5f33a5153b05802157d);
+            
+    
+            var marker_25bfd3dfd42333b4a7877c97e16744fc = L.marker(
+                [42.3416749, -3.710247551611164],
+                {
+}
+            ).addTo(map_dd618f283b41b04bc055836d52777b30);
+        
+    
+            var icon_5704dbbf12949283e1fb3f06f8398614 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_25bfd3dfd42333b4a7877c97e16744fc.bindTooltip(
+                `<div>
+                     
+        <b>Universidad Internacional Isabel I de Castilla</b><br>
+        Fundación: Fundación Universidad Internacional Isabel I de Castilla<br>
+        Año de Constitución: 2010<br>
+        Comunidad Autónoma: Castilla y Leon
+        
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_25bfd3dfd42333b4a7877c97e16744fc.setIcon(icon_5704dbbf12949283e1fb3f06f8398614);
+            
+</script>
+</html>
